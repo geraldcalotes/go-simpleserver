@@ -40,7 +40,7 @@ func welcomeHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Method is not supported", http.StatusNotFound)
 		return
 	}
-	fmt.Fprintf(w, "<h1>Welcome to Go Server Test</h1>")
+	fmt.Fprintf(w, "<h1>Welcome to Go Server DOCKER TEST</h1>")
 }
 func main() {
 	fileserver := http.FileServer(http.Dir("./static"))
